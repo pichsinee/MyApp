@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyApp"
+             x:Class="MyApp.MainPage"
+             BackgroundColor="Olive">
+
+    <ScrollView>
+        
+        <StackLayout
+            Orientation="Vertical"
+            BackgroundColor="Aqua"
+            Padding="10, 20, 30, 40">
+
+            <Label 
+                Text="Hello World"
+                BackgroundColor="Yellow"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                HeightRequest="50"
+                TextColor="#ff0000"
+                FontSize="20"
+                LineBreakMode="WordWrap"
+                x:Name="firstNameLabel"/>
+
+            <Entry
+                Placeholder="Input first name here"
+                Keyboard="Text" 
+                IsPassword="False"
+                IsEnabled="True"
+                IsVisible="True"
+                Margin="0,5,0,0"
+                x:Name="firstNameEntry"/>
+
+            <Button
+                Text="OK"
+                BackgroundColor="Silver"
+                x:Name="okButton"/>
+
+            <Editor
+                HeightRequest="100"/>
+
+            <DatePicker/>
+            <TimePicker/>
+
+            <Picker
+                x:Name="genderPicker"
+                Title="กรุณาเลือกเพศ"/>
+
+            <BoxView
+                Color="Red"/>
+
+            <WebView
+                Source="http://www.youtube.com"
+                HeightRequest="200"/>
+
+            <Button
+                Image="ic_password"/>
+
+            <Frame
+                BackgroundColor="Yellow"
+                Padding="10"
+                HasShadow="False">
+                <Label
+                    Text="Hello World2"
+                    HorizontalTextAlignment="Center"/>
+            </Frame>
+
+            <Label
+                x:Name="valueLabel"/>
+
+            <Slider
+                Minimum="0"
+                Maximum="100"
+                Value="50"
+                x:Name="ageSlider"/>
+        
+            <Stepper
+                Minimum="0"
+                Maximum="10"
+                Increment="1"
+                Value="0"
+                x:Name="myStepper"/>
+        
+            <Switch/>
+
+            <ProgressBar
+                Progress="0.5"/>
+
+            <SearchBar/>
+
+            <ActivityIndicator
+                IsRunning="True"/>
+
+        </StackLayout>
+            
+    </ScrollView>
+
+</ContentPage>
